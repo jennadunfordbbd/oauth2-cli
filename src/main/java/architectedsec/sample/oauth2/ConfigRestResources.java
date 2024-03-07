@@ -26,12 +26,6 @@ import org.springframework.hateoas.hal.Jackson2HalModule;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
-import org.springframework.security.oauth2.client.DefaultOAuth2ClientContext;
-import org.springframework.security.oauth2.client.OAuth2RestTemplate;
-import org.springframework.security.oauth2.client.token.DefaultAccessTokenRequest;
-import org.springframework.security.oauth2.client.token.grant.client.ClientCredentialsAccessTokenProvider;
-import org.springframework.security.oauth2.client.token.grant.client.ClientCredentialsResourceDetails;
-import org.springframework.security.oauth2.common.OAuth2AccessToken;
 import org.springframework.web.client.RestTemplate;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -83,8 +77,8 @@ public class ConfigRestResources {
 		
 		ClientCredentialsResourceDetails resource = new ClientCredentialsResourceDetails();
 		resource.setAccessTokenUri("http://localhost:8080/uaa/oauth/token");
-		resource.setClientId("fortressdemo2");
-		resource.setClientSecret("hard2guess!");
+		resource.setClientId("1021615318671-9un7amasiu1ecp43t7mam35unpdojl5t.apps.googleusercontent.com");
+		resource.setClientSecret("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");
 		resource.setId("fortressdemo2");
 		resource.setGrantType("client_credentials");
 		resource.setScope(Arrays.asList("fortressdemo2.read", "fortressdemo2.write"));

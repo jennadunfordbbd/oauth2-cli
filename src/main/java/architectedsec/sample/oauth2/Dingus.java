@@ -22,7 +22,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.Links;
-import org.springframework.hateoas.PagedResources;
+import org.springframework.hateoas.PagedModel;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.oauth2.client.OAuth2RestTemplate;
@@ -43,6 +43,7 @@ import architectedsec.sample.oauth2.Order;
  * With apologies to Dr. Seuss.
  *
  */
+@SuppressWarnings("deprecation")
 @Component
 public class Dingus {
 	
